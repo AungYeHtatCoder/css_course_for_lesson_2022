@@ -1,0 +1,11 @@
+p.example1 {
+  border: 1px solid;
+  border-bottom-color: green;
+  border-left-color: red;
+  border-right-color: blue;
+  border-top-color: yellow;
+}
+p.example2 {
+  border: 1px solid;
+  border-color: yellow;
+}

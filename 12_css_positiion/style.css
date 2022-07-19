@@ -1,0 +1,21 @@
+.position {
+  position: relative;
+  left: 80px;
+  top: 2px;
+  background-color: yellow;
+}
+.abso {
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  background-color: red;
+  margin: 10px;
+  padding: 15px;
+}
+
+.fix {
+  position: fixed;
+  left: 80px;
+  top: 120px;
+  background-color: green;
+}
