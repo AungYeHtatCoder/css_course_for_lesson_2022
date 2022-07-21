@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function sayHello() {
+        document.write('Hello there!');
+      }
+
+      function Hello(name, age) {
+        if (name == '' || age == '') return;
+
+        document.write(name + ' is ' + age + 'years old.');
+      }
+    </script>
+  </head>
+  <body>
+    <p>please click the following button to call the function</p>
+    <form action="">
+      <input type="button" onclick="sayHello();" value="say Hello" />
+    </form>
+
+    <br />
+    <hr />
+    <form action="">
+      Name : <input type="text" name="t1" placeholder="Enter Name" />
+      <br /><br />
+      Age : <input type="text" name="t2" placeholder="Enter Age" /> <br />
+      <br />
+      <input type="button" onclick="Hello(t1.value, t2.value);" value="Hello" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript array</title>
+  </head>
+  <body>
+    <h1>javascript array</h1>
+    <script>
+      var arr = new Array(5);
+      arr[0] = 10;
+      arr[1] = 20;
+      arr[2] = 30;
+      arr[3] = 40;
+      arr[4] = 50;
+      document.write(arr[0]);
+      document.write('<br>');
+      for (i = 0; i < arr.length; i++) {
+        document.write(arr[i]);
+        document.write('<br>');
+      }
+      document.write('<hr>');
+      document.write('<h1>New Array </h1>');
+      document.write('<br>');
+      var new_array = new Array(10, 20, 30, 40, 50);
+
+      for (i = 0; i < new_array.length; i++) {
+        document.write(new_array[i]);
+        document.write('<br>');
+      }
+
+      document.write('<hr>');
+      document.write('<h1>New Array example </h1>');
+      document.write('<br> <br> Before sort.... <br>');
+      var array_example = new Array(7, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1);
+
+      for (i = 0; i < 6; i++) {
+        document.write(array_example[i]);
+        document.write('<br>');
+      }
+      document.write('<hr>');
+
+      var i, j, temp;
+      for (i = 0; i < array_example.length; i++) {
+        for (j = 0; j < array_example.length - 1; j++) {
+          if (array_example[j] > array_example[j + 1]) {
+            temp = array_example[j];
+            array_example[j] = array_example[j + 1];
+            array_example[j + 1] = temp;
+          }
+        }
+      }
+      document.write('<br> <br> After sort.... <br>');
+      for (i = 0; i < array_example.length; i++) {
+        document.write(array_example[i]);
+        document.write('<br>');
+      }
+    </script>
+  </body>
+</html>
