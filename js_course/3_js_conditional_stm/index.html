@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var marks1 = prompt('Enter marks of subject 1', 'Enter----');
+      var marks2 = prompt('Enter marks of subject 2', 'Enter----');
+      var marks3 = prompt('Enter marks of subject 3', 'Enter----');
+
+      var toatal = parseInt(marks1) + parseInt(marks2) + parseInt(marks3);
+      var percent = (toatal * 100) / 150;
+      alert(percent);
+      if (percent >= 80) {
+        alert('Grade A');
+      } else if (percent >= 70) {
+        alert('Grade B');
+      } else if (percent >= 60) {
+        alert('Grade C');
+      } else if (percent >= 50) {
+        alert('Grade D');
+      } else {
+        alert('Grade E');
+      }
+    </script>
+  </body>
+</html>
